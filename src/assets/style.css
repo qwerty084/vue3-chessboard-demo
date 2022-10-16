@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-neutral-900 bg-neutral-100 pt-24;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    @apply text-neutral-900 dark:text-neutral-200;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto m-4 p-5;
+  }
+}
+
+.btn {
+  @apply inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.link-header a {
+  @apply rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;
+}
+
+.link-header a.router-link-exact-active {
+  @apply bg-gray-900;
+}
+
+a.router-link-exact-active div {
+  @apply bg-gray-900 text-white;
+}
+
+.container a {
+  @apply text-blue-500 underline;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeSpeed;
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.15s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .fade-leave-active,
+  .fade-enter-active {
+    transition: none;
+  }
+}
+
+.github {
+  @apply dark:fill-white;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="vue3-chessboard. A chessboard library built with Vue.js, Typescript, lichess chessground and chess.js">
+    <script>
+      const l=localStorage.getItem("theme");let p;null==l&&(p=window.matchMedia("(prefers-color-scheme: dark)").matches),("dark"===l||p)&&(document.documentElement.classList.add("dark"),document.querySelector("meta[name=theme-color]")?.setAttribute("content","#1F2937"));
+    </script>
+    <title>Vite App</title>
+  </head>
+  <body class="h-full">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
