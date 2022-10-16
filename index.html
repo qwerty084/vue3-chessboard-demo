@@ -8,7 +8,7 @@
     <script>
       const l=localStorage.getItem("theme");let p;null==l&&(p=window.matchMedia("(prefers-color-scheme: dark)").matches),("dark"===l||p)&&(document.documentElement.classList.add("dark"),document.querySelector("meta[name=theme-color]")?.setAttribute("content","#1F2937"));
     </script>
-    <title>Vite App</title>
+    <title>Vue3 Chessboard</title>
   </head>
   <body class="h-full">
     <div id="app"></div>
